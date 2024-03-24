@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <entry key="insertBoard">
+        Insert into board(board_title, board_content) values ("#{boardTitle}","#{boardContent}")
+    </entry>
+    <entry key="deleteBoard">
+        delete from board where board_num = #{boardNum}
+    </entry>
+    <entry key="updateBoard">
+        update board set board_title = "#{boardTitle}", board_content = '#{boardContent}', create_date = CURDATE() where board_num = #{boardNum}
+    </entry>
+    <entry key="listBoard">
+        select board_num, board_title, board_content, create_date from board order by board_num DESC
+    </entry>
+    <entry key="selectBoard">
+        select board_num, board_title, board_content, create_date from board where board_num = #{boardNum}
+    </entry>
+</properties>

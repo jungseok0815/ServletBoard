@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board-body{
+    width: 70%;
+    height: 70%;
+}
+.board-insert{
+
+}
